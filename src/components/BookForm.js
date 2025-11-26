@@ -8,7 +8,7 @@ const NewBookForm = () => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch({ type: 'ADD_BOOK', book: { title, author }});
+    dispatch({ type: 'ADD_BOOK', payload: { title, author }});
     setTitle('');
     setAuthor('');
   }
