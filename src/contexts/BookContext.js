@@ -1,9 +1,9 @@
 import React, { createContext, useState} from "react";
-import uuid from 'uuid/v4';
+import { v4 as uuid } from 'uuid';
 
 export const BookContext = createContext();
 
-const BookContextProvider = (props) => {
+export const BookContextProvider = (props) => {
   const [books, setBooks] = useState([
     { title: "The Name of the Wind", author: "Patrick Rothfuss", id: 1 },
     { title: "The Wise Man's Fear", author: "Patrick Rothfuss", id: 2 },
